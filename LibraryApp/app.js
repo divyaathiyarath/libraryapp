@@ -196,4 +196,7 @@ app.get('/authorsingle/:id',(req,res)=>{
     res.render('authorsingle',{nav:nav,title:"Authors","authors":authors[x]});
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000,()=>
+{
+    
+});
